@@ -1,38 +1,86 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.title {
+  margin: 20px 10px 10px 10px;
+  padding: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.genre {
+  margin: 10px;
+  padding: 5px;
+  background-color: #e5e8e5f4;
+  border-radius: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.filter {
+  padding-right: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.button-div {
+  margin: 10px;
   display: flex;
-  flex-direction: column;
+  gap: 10px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.button {
+  padding: 10px 10px;
+  background-color: #bfc2bf;
+  border: none;
+  border-radius: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button:hover {
+  background-color: #a1a3a1;
+  cursor: pointer;
+}
+
+.movies {
+  margin: 40px 40px;
+}
+
+/* .table {
+  margin: 10px 10px;
+  text-align: left;
+}
+
+.row-head {
+  background-color: #e5e8e5f4;
+}
+
+.data-genre {
+  width: 100px;
+}
+
+.data-title {
+  width: 300px;
+}
+
+.data-year {
+  width:100px;
+} */
+table {
+  width: 100%;
+  /* max-width: 500px; same as genre */
+  margin: auto;
+  
+}
+/* Optional table styling */
+table, th, td {
+  
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  border-collapse: collapse;
+  padding: 8px;
 }

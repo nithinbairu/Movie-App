@@ -29,17 +29,19 @@ body {
 .button-div {
   margin: 10px;
   display: flex;
-  gap: 10px;
+  flex-wrap: wrap;      
+  gap: 10px;            
   align-items: center;
-  justify-content: space-between;
 }
 
 .button {
-  padding: 10px 10px;
+  padding: 10px 18px;
   background-color: #bfc2bf;
   border: none;
   border-radius: 4px;
+  flex-shrink: 0;       
 }
+
 
 .button:hover {
   background-color: #a1a3a1;
@@ -50,43 +52,42 @@ body {
   margin: 40px 40px;
 }
 
-/* .table {
-  margin: 10px 10px;
-  text-align: left;
-}
-
-.row-head {
-  background-color: #e5e8e5f4;
-}
-
-.data-genre {
-  width: 100px;
-}
-
-.data-title {
-  width: 300px;
-}
-
-.data-year {
-  width:100px;
-} */
- .row-head {
-  background-color: #e5e8e5f4;
-}
 
 table {
   width: 100%;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  
   border-collapse: collapse;
-  padding: 8px;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;       
+  font-size: 15px;
+  border: 1px solid #e0e0e0;
 }
-/* Optional table styling */
-table, th, td {
-  
-  border: 1px solid #ccc;
-  
-  border-collapse: collapse;
-  padding: 8px;
+
+table thead {
+  background-color: #f0f2f0;
 }
+
+table thead th {
+  padding: 12px 10px;
+  text-align: left;
+  font-weight: bold;
+  color: #333;
+}
+
+
+table tbody tr {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+
+table tbody tr:hover {
+  background-color: #f8f9f8;
+}
+
+
+table tbody td {
+  padding: 10px;
+  color: #444;
+}
+

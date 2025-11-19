@@ -70,17 +70,23 @@ body {
 .data-year {
   width:100px;
 } */
+ .row-head {
+  background-color: #e5e8e5f4;
+}
+
 table {
   width: 100%;
-  /* max-width: 500px; same as genre */
-  margin: auto;
+  border-radius: 5px;
+  border: 1px solid #ccc;
   
+  border-collapse: collapse;
+  padding: 8px;
 }
 /* Optional table styling */
 table, th, td {
   
   border: 1px solid #ccc;
-  border-radius: 5px;
+  
   border-collapse: collapse;
   padding: 8px;
 }
